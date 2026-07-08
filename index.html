@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8" />
+		<script>
+			var coverSupport = 'CSS' in window && typeof CSS.supports === 'function' && (CSS.supports('top: env(a)') ||
+				CSS.supports('top: constant(a)'))
+			document.write(
+				'<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0' +
+				(coverSupport ? ', viewport-fit=cover' : '') + '" />')
+		</script>
+		<title></title>
+		<!--preload-links-->
+		<!--app-context-->
+	</head>
+	<body>
+		<div id="app"><!--app-html--></div>
+		<script type="module" src="/main.js"></script>
+	</body>
+</html>
+
+<!-- index.html 文件在 uni-app 项目中扮演着 “H5端（即网页版）的页面容器” 或 “基础模板” 的角色。
+
+它的核心作用是提供一个空的 HTML 骨架，作为 Vue.js 应用的挂载点。你可以把它理解为一个“空杯子”，
+你所有的 Vue 代码（在 main.js 里初始化）最终都会注入到这个杯子里，渲染出完整的页面。
+
+为什么它看起来像传统的 HTML？
+正因为它是“容器”和“模板”，所以它包含了标准的 HTML 文档结构（<!DOCTYPE html>, <head>, <body> 等）。它主要用来：
+
+提供挂载点：文件中有一个 <div id="app">，这就是 Vue 实例要挂载的地方。
+
+配置页面元信息：你可以在 <head> 标签里设置网页的标题（<title>）、字符编码（<meta charset>）、视口（<meta name="viewport">）等。
+
+什么时候需要修改它？
+index.html 主要用于 H5 平台（即网页版） 的配置，在打包成小程序或 App 时不会生效。常见的修改场景包括：
+
+设置网页标题和图标（favicon）：修改 <title> 标签和 <link rel="icon">。
+
+添加统计分析代码：如加入百度统计、Google Analytics 等第三方 JavaScript 脚本。
+
+引入全局的第三方 CSS 或 JS 库：例如，通过 CDN 引入某些 UI 库或工具库。
+
+优化 SEO：添加或修改 <meta> 标签，如 keywords 和 description。
+
+解决编译报错：在某些新版本的编译工具（如 Vite）中，如果项目根目录缺少 index.html 文件，可能会报错，因此这个文件是必需的。
+
+⚠️ 重要注意事项
+保留核心占位符：文件中有一个 --app-entry--  、--app-context-- 注释，这是 uni-app 用来注入代码的关键标记，切勿删除，否则页面将无法正常渲染。
+
+修改后需重新编译：对 index.html 的任何修改，都需要重新编译 H5 版本才能生效。
+
+主要针对 H5 端：此文件仅影响 H5 端（网页版），修改它不会影响小程序或 App 的表现。
+
+总结
+简单来说，index.html 虽然看起来是传统的 HTML，但它在 uni-app 项目中是一个高度定制化的模板文件。它不是用来写页面内容的，而是为整个 uni-app 的 H5 端提供一个“壳”，你主要的页面代码依然会写在 pages 目录下的 .vue 文件中。
+-->
