@@ -4,6 +4,7 @@
 	</view>
 	<view class="margin-bottom">
 		<text>v-bind:属性 <==> :属性</text>
+		<text>v-bind:属性 是单向绑定。它只会将ref变量变动的值“推”到组件，但组件改变时不会“拉”回数据，ref变量的值不会跟随变</text>
 	</view>
 
 	<view class="margin-bottom">
@@ -11,9 +12,9 @@
 	</view>
 
 	<view class="margin-bottom">
-		<!-- 存在多个 class 时，后面的会覆盖前面的 
-		<view class="box activite"> 
-		<view class="box" v-bind:class="'activite'"> 
+		<!-- 存在多个 class 时，后面的会覆盖前面的
+		<view class="box activite">
+		<view class="box" v-bind:class="'activite'">
 		<view class="box" v-bind:class="{activite:true}">
 		<view class="box" v-bind:class="{activite:isActive}">
 		<view class="box" v-bind:class="isActive?'activite':''">

@@ -19,6 +19,7 @@
 		flex-direction: column;
 		padding: 20rpx;
 	}
+
 	.layout-horizontal {
 		display: flex;
 		flex-direction: row;
@@ -27,7 +28,13 @@
 	}
 
 	.title {
+		text-align: center;
+		padding: 20rpx 0;
 		font-size: 50rpx;
+		color: black;
+	}
+	.menu{
+		font-size: 40rpx;
 		color: black;
 	}
 
@@ -53,7 +60,16 @@
 		line-height: 24px;
 		color: #999999;
 	}
-	.background-clock{
-		background-color: blanchedalmond;
+
+	.background-clock {
+		background-color: bisque;
+	}
+
+	.border-input{
+		width: 100%;
+		height: 50rpx;
+		line-height: 50rpx;
+		border: 1rpx solid #eeeeee;
+		border-radius: 4rpx;
 	}
 </style>

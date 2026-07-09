@@ -85,7 +85,37 @@
 			}
 		},
 		{
-			"path": "pages/vue3/v-if",
+			"path": "pages/vue3/v-if--v-show--render",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/vue3/list--render",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/vue3/v-model",
+			"style": {
+				"navigationBarTitleText": "v-model"
+			}
+		},
+		{
+			"path": "pages/list-comment/list-comment",
+			"style": {
+				"navigationBarTitleText": "list-comment"
+			}
+		},
+		{
+			"path": "pages/vue3/computed",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/vue3/watch",
 			"style": {
 				"navigationBarTitleText": ""
 			}

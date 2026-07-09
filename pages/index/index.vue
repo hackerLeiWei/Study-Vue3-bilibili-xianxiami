@@ -54,63 +54,88 @@
 		hover-stay-time="50">
 		<navigator class="layout-hover-green" url="/pages/scroll-view/scroll-view" open-type="navigate">
 			<view class="layout-hover-green" hover-class="hover-red" hover-stay-time="50" hover-stop-propagation>
-				<text>进入scroll-view 菜单页面</text>
+				<text class="menu">进入scroll-view 菜单页面</text>
 			</view>
 		</navigator>
 	</view>
 	<navigator class="layout-vertical" url="/pages/button/button" open-type="navigate">
 		<view class="layout-hover-green" hover-class="hover-red" hover-stay-time="50" hover-stop-propagation>
-			<text>进入 button 页面</text>
+			<text class="menu">进入 button 页面</text>
 		</view>
 	</navigator>
 	<navigator class="layout-vertical" url="/pages/input/input" open-type="navigate">
 		<view class="layout-hover-green" hover-class="hover-red" hover-stay-time="50" hover-stop-propagation>
-			<text>进入 input 页面</text>
+			<text class="menu">进入 input 页面</text>
 		</view>
 	</navigator>
 	<navigator class="layout-vertical" url="/pages/checkbox/checkbox" open-type="navigate">
 		<view class="layout-hover-green" hover-class="hover-red" hover-stay-time="50" hover-stop-propagation>
-			<text>进入 checkbox 页面</text>
+			<text class="menu">进入 checkbox 页面</text>
 		</view>
 	</navigator>
 	<navigator class="layout-vertical" url="/pages/radio-group/radio-group" open-type="navigate">
 		<view class="layout-hover-green" hover-class="hover-red" hover-stay-time="50" hover-stop-propagation>
-			<text>进入 radio-group 页面</text>
+			<text class="menu">进入 radio-group 页面</text>
 		</view>
 	</navigator>
 	<navigator class="layout-vertical" url="/pages/slider/slider" open-type="navigate">
 		<view class="layout-hover-green" hover-class="hover-red" hover-stay-time="50" hover-stop-propagation>
-			<text>进入 slider 页面</text>
+			<text class="menu">进入 slider 页面</text>
 		</view>
 	</navigator>
 	<navigator class="layout-vertical" url="/pages/switch/switch" open-type="navigate">
 		<view class="layout-hover-green" hover-class="hover-red" hover-stay-time="50" hover-stop-propagation>
-			<text>进入 switch 页面</text>
+			<text class="menu">进入 switch 页面</text>
 		</view>
 	</navigator>
 	<navigator class="layout-vertical" url="/pages/vue3/vue3" open-type="navigate">
 		<view class="layout-hover-green" hover-class="hover-red" hover-stay-time="50" hover-stop-propagation>
-			<text>进入 vue3 页面</text>
+			<text class="menu">进入 vue3 页面</text>
 		</view>
 	</navigator>
 	<navigator class="layout-vertical" url="/pages/vue3/ref" open-type="navigate">
 		<view class="layout-hover-green" hover-class="hover-red" hover-stay-time="50" hover-stop-propagation>
-			<text>进入 vue3 ref 页面</text>
+			<text class="menu">进入 vue3 ref 页面</text>
 		</view>
 	</navigator>
 	<navigator class="layout-vertical" url="/pages/vue3/v-bind" open-type="navigate">
 		<view class="layout-hover-green" hover-class="hover-red" hover-stay-time="50" hover-stop-propagation>
-			<text>进入 vue3 v-bind 属性页面</text>
+			<text class="menu">进入 vue3 v-bind 单向绑定属性页面</text>
 		</view>
 	</navigator>
 	<navigator class="layout-vertical" url="/pages/vue3/v-on" open-type="navigate">
 		<view class="layout-hover-green" hover-class="hover-red" hover-stay-time="50" hover-stop-propagation>
-			<text>进入 vue3 v-on 事件页面</text>
+			<text class="menu">进入 vue3 v-on 事件页面</text>
 		</view>
 	</navigator>
-	<navigator class="layout-vertical" url="/pages/vue3/v-if" open-type="navigate">
+	<navigator class="layout-vertical " url="/pages/vue3/v-model" open-type="navigate">
 		<view class="layout-hover-green" hover-class="hover-red" hover-stay-time="50" hover-stop-propagation>
-			<text>进入 v-if 条件渲染页面</text>
+			<text class="menu">进入 vue3 v-model 双向绑定页面</text>
+		</view>
+	</navigator>
+	<navigator class="layout-vertical" url="/pages/vue3/v-if--v-show--render" open-type="navigate">
+		<view class="layout-hover-green" hover-class="hover-red" hover-stay-time="50" hover-stop-propagation>
+			<text class="menu">进入 v-if、v-show 条件渲染页面</text>
+		</view>
+	</navigator>
+	<navigator class="layout-vertical" url="/pages/vue3/list--render" open-type="navigate">
+		<view class="layout-hover-green" hover-class="hover-red" hover-stay-time="50" hover-stop-propagation>
+			<text class="menu">进入列表渲染页面</text>
+		</view>
+	</navigator>
+	<navigator class="layout-vertical" url="/pages/list-comment/list-comment" open-type="navigate">
+		<view class="layout-hover-green" hover-class="hover-red" hover-stay-time="50" hover-stop-propagation>
+			<text class="menu">进入list-comment页面</text>
+		</view>
+	</navigator>
+	<navigator class="layout-vertical" url="/pages/vue3/computed" open-type="navigate">
+		<view class="layout-hover-green" hover-class="hover-red" hover-stay-time="50" hover-stop-propagation>
+			<text class="menu">进入computed页面</text>
+		</view>
+	</navigator>
+	<navigator class="layout-vertical" url="/pages/vue3/watch" open-type="navigate">
+		<view class="layout-hover-green" hover-class="hover-red" hover-stay-time="50" hover-stop-propagation>
+			<text class="menu">进入watch页面</text>
 		</view>
 	</navigator>
 
@@ -142,10 +167,11 @@
 <style lang="scss" scoped>
 	.layout-vertical {
 		display: flex;
+		width: 100vw;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin-bottom: 20rpx;
+		margin-bottom: 10rpx;
 
 		.box1 {
 			border: 1rpx solid red;
@@ -187,8 +213,8 @@
 
 	.layout-hover-green {
 		margin-bottom: 20rpx;
-		padding: 0 20rpx;
-		background-color: green;
+		padding: 0 10rpx;
+		background-color: beige;
 	}
 
 	.hover-orange {
